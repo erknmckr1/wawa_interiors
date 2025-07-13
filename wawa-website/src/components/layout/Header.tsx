@@ -2,10 +2,27 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useEffect } from "react";
+import clsx from "clsx";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <header className="w-full bg-transparent text-white fixed z-50">
+    <header
+      className={clsx(
+        "fixed top-0 text-white left-0 w-full z-50 transition-colors duration-300",
+        scrolled ? "bg-dark-blue shadow-md" : "bg-transparent"
+      )}
+    >
       <div className="container mx-auto px-4 h-[80px] flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">

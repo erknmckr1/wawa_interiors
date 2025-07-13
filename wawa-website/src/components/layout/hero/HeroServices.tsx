@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard";
 
 const HeroServices = () => {
   return (
-    <div className=" h-[243px] w-full md:w-auto z-10 absolute right-0 md:bottom-0  bg-dark-blue">
+    <div className=" h-[243px] w-full md:w-auto z-10 relative md:absolute md:right-0 md:bottom-0  bg-dark-blue">
       <div className="absolute -top-5 right-0 md:right-5 z-10 bg-primary hover:bg-dark-blue transition whitespace-nowrap duration-200 hover:text-white px-4 py-2 text-sm font-medium  flex items-center gap-2 cursor-pointer">
         Tüm Hizmetlerimiz
         <span className="ml-1">→</span>

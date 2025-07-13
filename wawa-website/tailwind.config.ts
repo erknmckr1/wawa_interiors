@@ -8,10 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        heading: ["Anton", "sans-serif"],
-        body: ["Rajdhani", "sans-serif"],
-      },
     },
     container: {
       center: true,

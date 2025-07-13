@@ -1,7 +1,8 @@
 // app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "@/components/layout/hero/Header";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/footer/Footer";
 export const metadata: Metadata = {
   title: "WAWA Interiors | Modern İç Mimarlık ve Proje Tasarımı",
   icons: {
@@ -61,6 +62,7 @@ export default function RootLayout({
       <body className="min-h-screen relative">
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

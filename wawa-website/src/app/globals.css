@@ -3,19 +3,33 @@
 @import "tailwindcss";
 
 @layer base {
-  h1, h2 {
-    font-family: 'Anton', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.1em;
   }
 
-  p, span, a, button {
-    font-family: 'Rajdhani', sans-serif;
+  p,
+  span,
+  a,
+  li,
+  label,
+  input button {
+    font-family: "Rajdhani", sans-serif;
   }
 }
 
-
 /* ✅ Global Utility Class Definitions */
 .bg-dark-blue {
-  @apply bg-[#0C0F1F];
+  @apply bg-[#24243E];
+}
+.bg-dark-blue-light {
+  @apply bg-[#2d2b51];
+}
+.hover\:bg-dark-blue:hover {
+  @apply bg-[#2d2b51];
 }
 
 .hover\:text-dark-blue:hover {
@@ -26,26 +40,21 @@
   @apply bg-[#0C0F1F];
 }
 
+/* primary */
 .text-primary {
   @apply text-[#C1DB25];
-}
-.text-secondary {
-  @apply text-[#24243E];
 }
 
 .text-primary-dark {
   @apply text-[#AAC11E];
 }
 
-.bg-primary {
-  @apply bg-[#C1DB25];
-}
-
 .border-primary {
   @apply border-[#C1DB25];
 }
-.border-secondary {
-  @apply border-[#24243E];
+
+.bg-primary {
+  @apply bg-[#C1DB25];
 }
 
 .hover\:text-primary:hover {
@@ -55,6 +64,44 @@
 .hover\:bg-primary:hover {
   @apply bg-[#C1DB25];
 }
+.text-secondary {
+  @apply text-[#24243E];
+}
+
+.bg-secondary {
+  @apply bg-[#24243E];
+}
+
+.border-secondary {
+  @apply border-[#24243E];
+}
+
+.hover\:border-secondary:hover {
+  @apply border-[#24243E];
+}
+
+.hover\:bg-secondary-light:hover {
+  @apply bg-[#4b4b6b];
+}
+.hover\:bg-primary-light:hover {
+  @apply bg-[#d6e95f]; /* veya diğer alternatiflerden biri */
+}
+
+.border-sub-color {
+  @apply border-[#3F3F60];
+}
+.text-sub-color {
+  @apply text-[#4C4C77];
+}
+
+@layer utilities {
+  .placeholder-sub-color::placeholder {
+    color: #4C4C77;
+  }
+}
+
+
+
 
 body {
   background: var(--background);
