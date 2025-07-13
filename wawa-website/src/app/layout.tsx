@@ -59,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
-      <body className="min-h-screen relative">
+      <body className="min-h-screen relative bg-dark-blue">
         <Header />
         {children}
         <Footer/>
