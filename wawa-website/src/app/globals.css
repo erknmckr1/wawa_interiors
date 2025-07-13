@@ -75,6 +75,9 @@
 .border-secondary {
   @apply border-[#24243E];
 }
+.border-input-color {
+  @apply border-[#44446B];
+}
 
 .hover\:border-secondary:hover {
   @apply border-[#24243E];
@@ -86,12 +89,22 @@
 .hover\:bg-primary-light:hover {
   @apply bg-[#d6e95f]; /* veya diğer alternatiflerden biri */
 }
-
+/* subss */
 .border-sub-color {
-  @apply border-[#3F3F60];
+  @apply border-[#686892];
 }
 .text-sub-color {
-  @apply text-[#4C4C77];
+  @apply text-[#686892];
+}
+
+.bg-input-color{
+  @apply bg-[#333354]
+}
+.text-333354-color{
+  @apply text-[#333354]
+}
+.border-333354-color{
+  @apply border-[#333354]
 }
 
 @layer utilities {
