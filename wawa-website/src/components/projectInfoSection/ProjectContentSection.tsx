@@ -4,50 +4,52 @@ import FairStandIntro from "../fairStandSection/FairStandIntro";
 export default function ProjectContentSection() {
   return (
     <FairStandSectionWrapper
-      leftContent={   <ProjectFlow
-                heading="# İÇ MİMARLIK"
-                title="Proje İş Akışı"
-                backgroundImage="/images/fairstandintro/projectFlow.png"
-                steps={[
-                  {
-                    step: "01",
-                    title: "Talepleri",
-                    highlight: "Dinleme",
-                    icon: "/icons/procectFlows/p1.svg",
-                  },
-                  {
-                    step: "02",
-                    title: "Proje",
-                    highlight: "Keşif",
-                    icon: "/icons/procectFlows/p2.svg",
-                  },
-                  {
-                    step: "03",
-                    title: "Talepleri",
-                    highlight: "Tasarımı",
-                    icon: "/icons/procectFlows/p2.svg",
-                  },
-                  {
-                    step: "04",
-                    title: "Proje",
-                    highlight: "Fiyatlandırma",
-                    icon: "/icons/procectFlows/p1.svg",
-                  },
-                  {
-                    step: "05",
-                    title: "Mimari",
-                    highlight: "Uygulama",
-                    icon: "/icons/procectFlows/p2.svg",
-                  },
-                  {
-                    step: "",
-                    title: "Proje",
-                    highlight: "Sürecimiz",
-                    icon: "/icons/procectFlows/play.svg",
-                    badgeText: "Play Video",
-                  },
-                ]}
-              />}
+      leftContent={
+        <ProjectFlow
+          heading="# İÇ MİMARLIK"
+          title="Proje İş Akışı"
+          backgroundImage="/images/fairstandintro/projectFlow.png"
+          steps={[
+            {
+              step: "01",
+              title: "Talepleri",
+              highlight: "Dinleme",
+              icon: "/icons/procectFlows/p1.svg",
+            },
+            {
+              step: "02",
+              title: "Proje",
+              highlight: "Keşif",
+              icon: "/icons/procectFlows/p2.svg",
+            },
+            {
+              step: "03",
+              title: "Talepleri",
+              highlight: "Tasarımı",
+              icon: "/icons/procectFlows/p2.svg",
+            },
+            {
+              step: "04",
+              title: "Proje",
+              highlight: "Fiyatlandırma",
+              icon: "/icons/procectFlows/p1.svg",
+            },
+            {
+              step: "05",
+              title: "Mimari",
+              highlight: "Uygulama",
+              icon: "/icons/procectFlows/p2.svg",
+            },
+            {
+              step: "",
+              title: "Proje",
+              highlight: "Sürecimiz",
+              icon: "/icons/procectFlows/play.svg",
+              badgeText: "Play Video",
+            },
+          ]}
+        />
+      }
       rightContent={
         <FairStandIntro
           heading="# WAWA İÇ MİMARLIK OFİSİ"

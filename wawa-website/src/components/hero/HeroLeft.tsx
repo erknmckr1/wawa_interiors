@@ -1,4 +1,5 @@
 import Image from "next/image";
+import VideoModal from "../VideoModal";
 const HeroLeft = () => {
   return (
     <div className="text-white sm:p-0 p-4 w-full mt-6 sm:mt-0 flex flex-col gap-6 max-w-xl relative">
@@ -35,9 +36,7 @@ const HeroLeft = () => {
           />{" "}
           Bizi Tanıyın!
         </button>
-        <button className="border border-white px-6 py-3  font-semibold">
-          Tanıtım Videomuz
-        </button>
+        <VideoModal />
       </div>
     </div>
   );
