@@ -35,7 +35,7 @@ export default function HighlightsSection() {
           {/* Sol başlık kısmı */}
           <div className="flex gap-x-4 items-center">
             <Image
-              src={"/images/projectHighlight/hlicon.svg"}
+              src={"/images/ProjectHighlight/hlicon.svg"}
               alt="Highlights Icon"
               width={80}
               height={80}
@@ -76,7 +76,7 @@ export default function HighlightsSection() {
         </div>
       </div>
       <Image
-        src={"/images/projectHighlight/highlightsbg.png"}
+        src={"/images/ProjectHighlight/highlightsbg.png"}
         alt="Highlights Background"
         width={500}
         height={500}

@@ -36,7 +36,7 @@ const HeroLeft = () => {
           />{" "}
           Bizi Tanıyın!
         </button>
-        <VideoModal />
+        <VideoModal title="Tanıtım Videomuz" />
       </div>
     </div>
   );

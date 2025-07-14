@@ -2,12 +2,12 @@ import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
-export default function VideoModal() {
+export default function VideoModal({title}: { title: string }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <button className="border border-white px-6 py-3 font-semibold">
-          Tanıtım Videomuz
+          {title}
         </button>
       </DialogTrigger>
 
