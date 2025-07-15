@@ -34,6 +34,9 @@
 .bg-3A3A61{
   @apply bg-[#3A3A61];
 }
+.bg-3E3E5A{
+  @apply bg-[#3E3E5A];
+}
 .bg-313159{
   @apply bg-[#313159]
 }

@@ -4,6 +4,8 @@ import ContactSectionWrapper from "@/components/contactSection/ContactSectionWra
 import FairContent from "@/components/fairStandSection/FairContent";
 import ProjectContentSection from "@/components/projectInfoSection/ProjectContentSection";
 import HighlightsSection from "@/components/projectHighlights/HighLightsSection";
+import PromoCardSection from "@/components/PromoCardSection/PromoCardSection";
+import BrandSliderSection from "@/components/BrandSlider/BrandSliderSection";
 export default function Home() {
   return (
     <div>
@@ -11,8 +13,10 @@ export default function Home() {
       <ComponyIntroSection />
       <ContactSectionWrapper />
       <ProjectContentSection />
-      <HighlightsSection/>
+      <PromoCardSection />
       <FairContent />
+      <BrandSliderSection />
+      <HighlightsSection/>
     </div>
   );
 }
