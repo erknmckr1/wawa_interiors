@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/footer/Footer";
+import BubbleButton from "@/components/layout/BubbleButton/BubbleButton";
 export const metadata: Metadata = {
   title: "WAWA Interiors | Modern İç Mimarlık ve Proje Tasarımı",
   icons: {
@@ -62,7 +63,23 @@ export default function RootLayout({
       <body className="min-h-screen relative bg-dark-blue">
         <Header />
         {children}
-        <Footer/>
+        <Footer />
+        <BubbleButton
+          iconSrc="/icons/wpicon.png"
+          href="https://wa.me/905050054134"
+          size={60}
+          bgColor="bg-green-500 hover:bg-green-600"
+          position="bottom-6 right-6"
+          alt="WhatsApp ile iletişime geç"
+        />
+        <BubbleButton
+          iconSrc="/icons/formicons/blackphone.svg"
+          href="tel:+905050054134"
+          size={60}
+          bgColor="bg-lime-400"
+          position="bottom-24 right-6"
+          alt="Telefonla ara"
+        />
       </body>
     </html>
   );

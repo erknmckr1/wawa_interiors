@@ -22,11 +22,11 @@ export default function BrandSliderSection() {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full px-4 py-6 bg-3A3A61 relative z-1">
+    <div className="w-full  bg-3A3A61 relative z-1">
       <div className="w-full flex">
         {/* Sol başlık kısmı */}
 
-        <div className="w-1/3 md:w-1/4  space-y-2 ">
+        <div className="hidden sm:block w-1/3 md:w-1/4 px-4 py-6 z-0  space-y-2 relative ">
           <div className="space-y-2">
             <p className="text-primary text-sm md:text-xl font-medium">
               Referanslarımız
@@ -51,12 +51,19 @@ export default function BrandSliderSection() {
               <ArrowRight size={20} />
             </button>
           </div>
-
-          <div className="absolute inset-0 w-1/3 md:w-1/4 h-full border-r border-[#333354] z-0 pointer-events-none"></div>
+          {/* decoration image */}
+          <Image
+            src={"/images/brands/brandslider.png"}
+            width={60}
+            height={60}
+            alt="Brand Slider Decoration"
+            className="absolute bottom-0 right-0 w-24 md:w-32 "
+          />
         </div>
-
+        {/* border div */}
+        <div className="absolute hidden md:block inset-0 w-1/3 md:w-1/4 h-full border-r border-[#333354] z-0 pointer-events-none"></div>
         {/* Sağ Slider */}
-        <div className="w-2/4 md:w-3/4 pl-4 overflow-hidden">
+        <div className="w-full md:w-3/4 pl-4 overflow-hidden px-4 py-6">
           <Swiper
             modules={[Navigation]}
             onBeforeInit={(swiper) => {
